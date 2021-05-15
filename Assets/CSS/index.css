@@ -54,6 +54,29 @@ body {
 .bg-square {
     background-color: #3151AD!important;
 }
+.d-flex {
+    display: flex!important;
+}
+.j-content-center {
+    justify-content: center!important;
+}
+.square-ux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    max-height: 50px;
+}
+.square {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+.h1-square {
+    font-size: 45px;
+    line-height: 40px;
+    margin-left: 10px;
+}
 /** Header **/
 .header {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif!important;
@@ -119,16 +142,19 @@ nav, ul {
 
 /** Section apresentação **/
 .section-apresentacao {
-    height: 300px;
+    height: auto!important;
     background-color: #FBFBFB;
     font-family: 'Poppins', Arial, Helvetica, sans-serif!important;
     display: flex;
     justify-content: center;
 }
 .container-apresentacao {
-    height: 300px;
+    height: 175px;
     width: 1250px!important;
     align-items: center;
+}
+.apresentacao-text {
+    max-width: 550px!important;
 }
 .h1-apresentacao {
     font-size: 35px;
@@ -140,49 +166,48 @@ nav, ul {
 /** Section sobre **/
 .section-sobre {
     height: 600px;
+    display: flex;
+    justify-content: center;
     background-color: #FBFBFB;
-    border: 3px solid #000;
+    border-top: 3px solid #3151AD;
     font-family: 'Poppins', Arial, Helvetica, sans-serif!important;
 }
 .container-section-sobre {
     height: 600px;
-    width: 1250px!important;
     max-width: 1250px!important;
-    justify-content: center;
+    flex-direction: column;
 }
-.square-ux {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    max-height: 50px;
-}
-.square {
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-}
-.h1-square {
-    font-size: 45px;
-    line-height: 40px;
-    margin-left: 10px;
+.p-sobre {
+    font-size: 19px;
+    max-width: 710px;
 }
 .sobre-content {
-    display: flex;
-    flex-direction: row;
+    justify-content: space-evenly!important;
 }
 .img-area {
+    float: right;
     width: 500px;
 }
 .img-sobre {
-    width: 340px;
-    justify-content: unset;
-    border-radius: 200%;
-   /*border: 2px solid #019fb6;*/
+    float: right;
+    width: 400px;
+    border-radius: 300px;
 }
 
 
 /** Responsivo **/
+@media only screen and (max-width: 992px) {
+    .sobre-content {
+        flex-direction: column-reverse!important;
+    }
+    .img-sobre {
+        width: 350px;
+        margin-top: 20px;
+    }
+    .sobre-texto {
+        margin-top: 20px;
+    }
+}
 
 @media only screen and (max-width:830px) {
     .ul-header {
@@ -233,12 +258,11 @@ nav, ul {
     }
 }
 
+@media only screen and (max-width: 770px) {
+    .img-area {
+        margin: auto!important;
+        float: unset;
+        width: unset;
+    }
 
-@media only screen and (max-width:470px) {
-    .h1-apresentacao {
-        font-size: 28px;
-    }
-    .p-apresentacao {
-        font-size: 17.5px;
-    }
 }

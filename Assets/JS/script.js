@@ -9,21 +9,6 @@ function menuMobile() {
 }
 
 
-function letreiro(elemento) {
-	const textArray = elemento.innerHTML.split('');
-	elemento.innerHTML = '';
-	textArray.forEach((letra, i) => {
-		setTimeout(() => {
-			elemento.innerHTML += letra;
-		}, 200 * i);
-	});
-
-}
-
-const texto = document.querySelector('.p-active');
-letreiro(texto);
-
-
 /*Scroll conteúdos*/
 
 $('.nav-scroll a[href^="#"]').click(function(e){
