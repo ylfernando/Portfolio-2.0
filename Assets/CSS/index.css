@@ -227,9 +227,11 @@ nav, ul {
 }
 .h1-servico {
     font-size: 20px;
+    text-align: center;
 }
 .p-servico {
     font-size: 15px;
+    max-height: 0!important;
 }
 .img-servicos {
     width: 100px;
