@@ -19,6 +19,9 @@ body {
 .mt-30 {
     margin-top: 30px!important;
 }
+.mt-5 {
+    margin-top: 5px!important;
+}
 .p-20 {
     padding: 20px!important;
 }
@@ -165,7 +168,7 @@ nav, ul {
 
 /** Section sobre **/
 .section-sobre {
-    height: 600px;
+    height: 525px;
     display: flex;
     justify-content: center;
     background-color: #FBFBFB;
@@ -173,7 +176,7 @@ nav, ul {
     font-family: 'Poppins', Arial, Helvetica, sans-serif!important;
 }
 .container-section-sobre {
-    height: 600px;
+    height: 525px;
     max-width: 1250px!important;
     flex-direction: column;
 }
@@ -194,8 +197,59 @@ nav, ul {
     border-radius: 300px;
 }
 
+/** Section serviços **/
+.section-servicos {
+    height: 600px;
+    background-color: #FBFBFB;
+    border-top: 3px solid #3151AD;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif!important;
+}
+.container-servicos {
+    height: 600px;
+    width: 1250px;
+    max-width: 1250px!important;
+    flex-direction: column;
+}
+.servicos-area {
+    display: flex;
+    justify-content: space-between;
+}
+.servico {
+    width: 300px;
+    max-width: 400px;
+    flex-direction: column;
+    justify-content: center;
+}
+.servico-img {
+    text-align: center;
+}
+.h1-servico {
+    font-size: 20px;
+}
+.p-servico {
+    font-size: 15px;
+}
+.img-servicos {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /** Responsivo **/
+
+/**Desktop LG **/
 @media only screen and (max-width: 992px) {
     .sobre-content {
         flex-direction: column-reverse!important;
@@ -209,6 +263,7 @@ nav, ul {
     }
 }
 
+/** Desktop MD **/
 @media only screen and (max-width:830px) {
     .ul-header {
         display: none;
@@ -257,12 +312,30 @@ nav, ul {
         transform: scaleX(1);
     }
 }
-
+/** Desktop MD² **/
 @media only screen and (max-width: 770px) {
     .img-area {
         margin: auto!important;
         float: unset;
         width: unset;
     }
+}
 
+/** Mobile **/
+@media only screen and (max-width: 450px) {
+    .h1-apresentacao {
+        font-size: 27px;
+    }
+    .p-apresentacao {
+        font-size: 16.5px;
+    }
+    .h1-square {
+        font-size: 40px;
+    }
+    .img-sobre {
+        width: 275px;
+    }
+    .p-sobre {
+        font-size: 17.5px;
+    }
 }
