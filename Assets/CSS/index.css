@@ -237,6 +237,9 @@ nav, ul {
     width: 100px;
     height: 100px;
 }
+.area2 {
+    padding-top: 100px;
+}
 
 
 
@@ -256,12 +259,29 @@ nav, ul {
     .sobre-content {
         flex-direction: column-reverse!important;
     }
+    .section-sobre, .container-section-sobre {
+        height: auto;
+    }
     .img-sobre {
         width: 350px;
         margin-top: 20px;
     }
     .sobre-texto {
         margin-top: 20px;
+    }
+    .servicos-area {
+        display: flex;
+        align-items:  center;
+        flex-direction: column;
+    }
+    .servico {
+        margin-bottom: 100px;
+    }
+    .p-servico {
+        padding-top: 10px;
+    }
+    .area2 {
+        padding-top: 0;
     }
 }
 
@@ -339,5 +359,10 @@ nav, ul {
     }
     .p-sobre {
         font-size: 17.5px;
+    }
+    .img-servicos {
+        width: 85px;
+        height: 85px;
+
     }
 }
