@@ -199,7 +199,7 @@ nav, ul {
 
 /** Section serviços **/
 .section-servicos {
-    height: 600px;
+    height: 630px;
     background-color: #FBFBFB;
     border-top: 3px solid #3151AD;
     display: flex;
@@ -207,7 +207,7 @@ nav, ul {
     font-family: 'Poppins', Arial, Helvetica, sans-serif!important;
 }
 .container-servicos {
-    height: 600px;
+    height: 630px;
     width: 1250px;
     max-width: 1250px!important;
     flex-direction: column;
@@ -232,6 +232,7 @@ nav, ul {
 .p-servico {
     font-size: 15px;
     max-height: 0!important;
+    width: 100%;
 }
 .img-servicos {
     width: 100px;
@@ -259,7 +260,7 @@ nav, ul {
     .sobre-content {
         flex-direction: column-reverse!important;
     }
-    .section-sobre, .container-section-sobre {
+    .section-sobre, .container-section-sobre, .section-servicos {
         height: auto;
     }
     .img-sobre {
