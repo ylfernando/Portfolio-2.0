@@ -260,7 +260,8 @@ nav, ul {
     .sobre-content {
         flex-direction: column-reverse!important;
     }
-    .section-sobre, .container-section-sobre, .section-servicos {
+    .section-sobre, .container-section-sobre, .section-servicos, .container-servicos {
+        background-color: #FBFBFB;
         height: auto;
     }
     .img-sobre {
