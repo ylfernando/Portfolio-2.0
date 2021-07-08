@@ -242,8 +242,42 @@ nav, ul {
     padding-top: 100px;
 }
 
-
-
+/** Section projetos **/
+.section-projetos {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    height: 400px;
+    border-top: 3px solid #3151AD;
+    background-color: #FBFBFB;
+}
+.container-projetos {
+    width: 1250px;
+    max-width: 100%!important;
+}
+.h1-projetos {
+    font-size: 20px;
+}
+.espacador {
+    width: 33px;
+    height: 2px;
+    background-color: #3151AD; 
+    margin-top: 2px;
+}
+.projetos-area {
+    justify-content: space-evenly;
+}
+.projeto {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img-projeto {
+    width: 200px;
+}
+.h3-projeto-title {
+    text-align: center;
+    font-size: 19px;
+}
 
 
 
@@ -342,6 +376,16 @@ nav, ul {
         margin: auto!important;
         float: unset;
         width: unset;
+    }
+    .section-projetos {
+        height: auto;
+    }
+    .projetos-area {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projeto {
+        padding: 20px 0;
     }
 }
 
