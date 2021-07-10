@@ -275,10 +275,30 @@ nav, ul {
     width: 200px;
 }
 .h3-projeto-title {
-    text-align: center;
+    text-align: center !important;
     font-size: 19px;
+    cursor: pointer;
+}
+.projeto-title  a {
+    text-decoration: none;
+    color: #0B0B99;
+    transition: all ease 0.4s;
+    text-align: center !important;
+    display: block;
 }
 
+
+
+.projeto-title a::after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #3151AD;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out
+}
+.projeto-title a:hover::after {
+    transform: scaleX(1);
+}
 
 /** Section contato **/
 .section-contato {
@@ -297,7 +317,7 @@ nav, ul {
 }
 .p-contato {
     font-weight: 500;
-    font-size: 19px;
+    font-size: 23px;
 }
 .rede-contato {
     margin: 10px 5px 0px 5px;
@@ -316,7 +336,9 @@ nav, ul {
 .btn-contato:hover {
     background-color: #1010d0;
 }
-
+.p-botao {
+    font-size: 18px;
+}
 
 
 
@@ -422,6 +444,12 @@ nav, ul {
     }
 }
 
+@media only screen and (max-width: 780px) {
+    .p-botao {
+        padding: 0 20px;
+    }
+}
+
 /** Mobile **/
 @media only screen and (max-width: 450px) {
     .h1-apresentacao {
@@ -438,6 +466,15 @@ nav, ul {
     }
     .p-sobre {
         font-size: 17.5px;
+    }
+    .p-contato {
+        font-size: 19px;
+    }
+    .p-botao {
+        font-size: 17px;
+    }
+    .btn-contato {
+        font-size: 14px;
     }
     .img-servicos {
         width: 85px;
