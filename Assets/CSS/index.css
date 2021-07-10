@@ -280,9 +280,42 @@ nav, ul {
 }
 
 
-
-
-
+/** Section contato **/
+.section-contato {
+    height: 400px;
+    background-color: #FBFBFB;
+    border-top: 3px solid #3151AD;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif; 
+}
+.container-contato {
+    width: 1250px;
+    max-width: 100%;
+}
+.contato-text {
+    margin-top: 10px;
+    text-align: center;
+}
+.p-contato {
+    font-weight: 500;
+    font-size: 19px;
+}
+.rede-contato {
+    margin: 10px 5px 0px 5px;
+}
+.btn-contato {
+    background-color: #3151AD;
+    border: 0;
+    font-family: 'Poppins';
+    padding: 20px;
+    color: #FFF;
+    border-radius: 7px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all ease 1s;
+}
+.btn-contato:hover {
+    background-color: #1010d0;
+}
 
 
 
@@ -409,6 +442,5 @@ nav, ul {
     .img-servicos {
         width: 85px;
         height: 85px;
-
     }
 }
