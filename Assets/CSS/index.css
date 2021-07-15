@@ -340,8 +340,51 @@ nav, ul {
     font-size: 18px;
 }
 
-
-
+/** Footer **/
+.footer {
+    height: 250px;
+    background-color: #323297;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+.container-footer {
+    width: 1250px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.logo-footer {
+    text-align: center;
+}
+.ul-footer {
+    display: unset !important;
+}
+.li-footer a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all ease 0.4s;
+    display: inline-block;
+}
+.li-footer a::after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #019fb6;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out
+}
+.li-footer a:hover::after {
+    transform: scaleX(1);
+}
+.footer-copy {
+    background-color: #323297;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.copy {
+    font-size: 17px;
+    color: #FFF;
+}
 /** Responsivo **/
 
 /**Desktop LG **/
@@ -479,5 +522,26 @@ nav, ul {
     .img-servicos {
         width: 85px;
         height: 85px;
+    }
+    .footer {
+        height: 360px;
+    }
+    .img-footer {
+        width: 185px;
+    }
+    .li-footer {
+        margin: 8px 0;
+    }
+    .li-footer a {
+        font-size: 16.5px;
+    }
+    .copy {
+        font-size: 16px;
+    }
+    .container-footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
 }
