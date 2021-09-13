@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--- Meta --->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Programador de Cachoeira do Sul, Programador Freelancer, Cachoeira do Sul, RS, Front-end, Bootstrap, Javascript, CSS, HTML, PHP, Programador, InfoJobs">
+    <meta name="description" content="Programador freelancer, com conhecimentos técnicos em diversas tecnologias para melhorar sua empresa.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fernando Freitas">
+    <!--- Estilos --->
+    <link rel="stylesheet" href="Assets/CSS/index.css" type="text/CSS">
+    <!--- Fontes -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+    </style>
+    <title>Fernando Freitas - Desenvolvedor de sistemas em websites - Cachoeira do Sul RS</title>
+</head>
+<body>
+    <!--- Header --->
+    <header class="header" id="header">
+        <div class="container-header">
+            <div class="logo">
+                <img src="Assets/Images/Header/logo-teste.png" alt="Freitas DEV" class="logo-header">
+            </div>
+            <div class="menu-header">
+                <nav class="nav nav-scroll">
+                    <div class="menu-mobile" onclick="menuMobile()">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul class="ul-header">
+                        <li class="li-header"><a href="#header">Home</a></li>
+                        <li class="li-header"><a href="#sobre">Sobre</a></li>
+                        <li class="li-header"><a href="#servicos">Serviços</a></li>
+                        <li class="li-header"><a href="#projetos">Projetos</a></li>
+                        <li class="li-header"><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        <!--- Menu mobile --->
+            <div class="menu-header-mobile">
+                <nav class="nav-mobile">
+         <ul class="ul-header-mobile">
+                        <li class="li-header-mobile"><a href="#header">Home</a></li>
+                        <li class="li-header-mobile"><a href="#sobre">Sobre</a></li>
+                        <li class="li-header-mobile"><a href="#servicos">Serviços</a></li>
+                        <li class="li-header-mobile"><a href="#projetos">Projetos</a></li>
+                        <li class="li-header-mobile"><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+                </div>
+        </div>
+    </header>
+
+    <!--- Section apresentação --->
+    <section class="section-apresentacao">
+        <div class="container-apresentacao p-20">
+            <div class="apresentacao-text">
+            <h1 class="h1-apresentacao fw-700 color-text">Fernando Freitas</h1>
+            <p class="p-apresentacao color-text py-5 fw-500">Programador Front-end <span class="bold">&</span> Back-end</p>
+            <p class="p-apresentacao color-text fw-500">Freelancer</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--- Section sobre --->
+    <section class="section-sobre" id="sobre">
+    <!--- Início do container --->
+        <div class="container-section-sobre p-20">
+    <!--- Square --->
+                <div class="square-ux mt-20">
+                    <span class="square bg-square"></span>
+                    <h1 class="h1-square fw-600 color-text">Sobre</h1>
+                </div>
+            <div class="sobre-content mt-20 d-flex">
+    <!--- Texto sobre --->
+                <div class="sobre-texto">
+                    <p class="p-sobre fw-400 py-10 color-text">Olá, tudo bem? Me chamo Fernando Freitas e sou um <span class="bold">desenvolvedor júnior</span> em sistemas Web. Atualmente estou trabalhando apenas como <span class="bold">freelancer</span>, fazendo sistemas para clientes de minha cidade e também para clientes de plataformas (<span class="bold">99Freelas</span> e <span class="bold">Workana</span>).</p>
+                    <p class="p-sobre fw-400 py-10 color-text">Conheci a programação bem no início de 2019, após ver um anúncio da plataforma onde estudo até hoje. Começando pelo básico da programação <span class="bold">Front-end</span> (<span class="bold">HTML</span>, <span class="bold">CSS</span> e <span class="bold">JavaScript</span>), eu aprimorei meus conhecimentos aprendendo <span class="bold">Bootstrap</span> (framework) e <span class="bold">jQuery</span> (lib). Hoje em dia estou com maior foco no <span class="bold">Back-end</span>, estudando <span class="bold">PHP</span> e seus frameworks.</p>
+                </div>
+    <!--- Imagem sobre --->
+                <div class="img-area">
+                        <img src="Assets/Images/Sobre/Fernando.jpg" alt="Freitas Dev" class="img-sobre">
+                </div>
+            </div>
+    </div>
+    </section>
+
+
+    <!--- Section serviços --->
+    <section class="section-servicos" id="servicos">
+    <!--- Container serviços --->
+        <div class="container-servicos p-20">
+    <!--- Square --->
+                <div class="square-ux mt-20">
+                    <span class="square bg-square"></span>
+                    <h1 class="h1-square fw-600 color-text">Serviços</h1>
+                </div>
+    <!--- Serviços --->
+        <div class="servicos-area mt-20">
+     <!--- 1º serviço --->
+            <div class="servico d-flex mt-20">
+                <div class="servico-img">
+                <img class="img-servicos" src="Assets/Images/Serviços/site.svg"/>
+                </div>
+                <div class="servico-title-sbtitle">
+                    <h1 class="h1-servico color-text">Desenvolvimento de sites</h1>
+                    <p class="p-servico mt-5 color-text">Desenvolvimento de <span class="bold">landing pages</span>, sites para <span class="bold">empresas</span> e <span class="bold">leads</span>.</p>
+                </div>
+            </div>
+
+                 <!--- 2º serviço --->
+            <div class="servico d-flex mt-20">
+                <div class="servico-img">
+                <img class="img-servicos" src="Assets/Images/Serviços/seo.svg"/>
+                </div>
+                <div class="servico-title-sbtitle">
+                    <h1 class="h1-servico color-text">Especialista em SEO</h1>
+                    <p class="p-servico mt-5 color-text">Conhecimento nos motores de busca, deixando seu site <span class="bold">mais fácil</span> de ser encontrado.</p>
+                </div>
+            </div>
+
+                 <!--- 3º serviço --->
+            <div class="servico d-flex mt-20">
+                <div class="servico-img">
+                <img class="img-servicos" src="Assets/Images/Serviços/marketing.svg"/>
+                </div>
+                <div class="servico-title-sbtitle">
+                    <h1 class="h1-servico color-text">Marketing Digital</h1>
+                    <p class="p-servico mt-5 color-text">Com o <span class="bold">SEO</span>, o Marketing é muito importante com o <span class="bold">Google ADS</span>.</p>
+                </div>
+            </div>
+        </div>
+
+
+            <!--- 2º área de serviços --->
+        <div class="servicos-area area2 mt-20">
+     <!--- 1º serviço --->
+            <div class="servico d-flex mt-20">
+                <div class="servico-img">
+                <img class="img-servicos" src="Assets/Images/Serviços/rocket.svg"/>
+                </div>
+                <div class="servico-title-sbtitle">
+                    <h1 class="h1-servico color-text">Inovador</h1>
+                    <p class="p-servico mt-5 color-text">Inovar uma empresa com <span class="bold">quaisquer tecnlogia</span>, é meu ponto forte.</p>
+                </div>
+            </div>
+
+                 <!--- 2º serviço --->
+            <div class="servico d-flex mt-20">
+                <div class="servico-img">
+                <img class="img-servicos" src="Assets/Images/Serviços/suporte.svg"/>
+                </div>
+                <div class="servico-title-sbtitle">
+                    <h1 class="h1-servico color-text">Suporte 24H</h1>
+                    <p class="p-servico mt-5 color-text">Sempre que necessário, estarei fazendo alguma <span class="bold">manutenção</span>/<span class="bold">reparo</span>.</p>
+                </div>
+            </div>
+
+                 <!--- 3º serviço --->
+            <div class="servico d-flex mt-20">
+                <div class="servico-img">
+                <img class="img-servicos" src="Assets/Images/Serviços/php.svg"/>
+                </div>
+                <div class="servico-title-sbtitle">
+                    <h1 class="h1-servico color-text">Linguagem Back-end PHP</h1>
+                    <p class="p-servico mt-5 color-text">Junto com a linguagem, trabalho com o banco de dados <span class="bold">MySQL</span>.</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+    </section>
+
+    <!--- Section projetos -->
+    <section class="section-projetos d-flex j-content-center">
+        <div class="container-projetos p-20">
+                <!--- Square --->
+                <div class="square-ux mt-20">
+                    <span class="square bg-square"></span>
+                    <h1 class="h1-square fw-600 color-text">Projetos</h1>
+                </div>
+            
+            <div class="projetos-title">
+                <h1 class="h1-projetos color-text mt-20">
+                    Projetos de clientes
+                    <div class="espacador"></div>
+                </h1>
+            </div>
+            <div class="projetos-area mt-20 d-flex">
+                <div class="projeto">
+                    <div class="projeto-img">
+                        <img src="Assets/Images/Projetos/dscf5856.dng_-e1588959378786.jpg" class="img-projeto">
+                    </div>
+                    <div class="projeto-title">
+                        <a href="#"><h3 class="h3-projeto-title color-text">AliCar</h3></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--- Section contato -->
+    <section id="contato" class="section-contato d-flex j-content-center">
+        <div class="container-contato p-20">
+            <!--- Square --->
+                <div class="square-ux mt-20">
+                    <span class="square bg-square"></span>
+                    <h1 class="h1-square fw-600 color-text">Contato</h1>
+                </div>
+
+                <div class="contato-text mt-20">
+                    <p class="p-contato mt-20 color-text">
+                        Minhas redes sociais:
+                    </p>
+                    <a href="#"><img class="rede-contato" src="Assets/Images/Contato/icons8-facebook.svg" width="50" alt="Facebook"></a>
+
+                    <a href="#"><img class="rede-contato" src="Assets/Images/Contato/icons8-instagram.svg" width="50" alt="Facebook"></a>
+
+                    <p class="p-botao color-text mt-20">
+                        Quer trocar uma ideia ou tirar um orçamento? Clique no <span class="bold">botão</span> abaixo
+                    </p>
+                    
+                    <a target="_blank" href="https://api.whatsapp.com/send?1=pt_br&phone=5551997142202">
+                        <button type="button" class=" mt-20 btn-contato">
+                            Conversar com Freitas Dev
+                        </button>
+                    </a>
+                </div>
+        </div>
+    </section>
+
+    <!--- Footer -->
+    <footer class="footer">
+        <div class="container-footer p-20">
+            <div class="logo-footer mt-20">
+                <img src="Assets/Images/Header/logo-teste.png" class="img-footer" alt="Logo">
+            </div>
+            <div class="menu-footer mt-20">
+                <ul class="ul-footer">
+                    <li class="li-footer"><a href="#header">Voltar para o topo</a></li>
+                    <li class="li-footer"><a href="#sobre">Sobre</a></li>
+                    <li class="li-footer"><a href="#servicos">Serviços</a></li>
+                    <li class="li-footer"><a href="#projetos">Projetos</a></li>
+                    <li class="li-footer"><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+    </footer>
+    
+    <div class="footer-copy">
+        <p class="copy p-20">Copyright 2021. Todos os direitos reservados.</p>
+    </div>
+    <!--- Scripts --->
+    <script src="Assets/JS/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="Assets/JS/popper.min.js" type="text/javascript"></script>
+    <script src="Assets/JS/script.js" type="text/javascript"></script>
+    <script src="Assets/JS/scroll-suave.js" type="text/javascript"></script>  
+</body>
+</html>
