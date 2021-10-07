@@ -37,11 +37,11 @@ body {
     border: 2px solid #0B0B99;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 nav ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
 }
 nav a {
     text-decoration: none;
@@ -62,17 +62,25 @@ nav a {
     text-decoration: none;
     color: #323297;
     font-weight: 500;
-    margin: 30px 0;
+    margin: 15px 0;
 }
 .add-projeto-area {
     width: 65%;
-    height: 50%;
+    height: auto;
     background-color: rgb(247, 247, 247);
     border: 2px solid #0B0B99;
     margin-left: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.form {
+    flex-wrap: wrap;
+}
+.h1-projeto {
+    font-size: 30px;
+    color: #0B0B99;
+    margin: 10px 0;
 }
 .formulario-area {
     margin-top: 20px;

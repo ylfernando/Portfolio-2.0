@@ -3,6 +3,14 @@ session_start();
 if(!isset($_SESSION['login'])) {
     exit(header("Location: login.php"));
 }
+
+require 'Classes/projetos.class.php';
+$p = new Projeto();
+
+if(isset($_GET['id']) && !empty($_GET['id'])) {
+    $get -> getProjeto($_GET['id']);
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -34,8 +42,9 @@ if(!isset($_SESSION['login'])) {
             <div class="menu">
                 <nav class="nav">
                     <ul class="ul">
-                        <a href="#">
-                            <li class="menu-li active">Adicionar projeto
+                        <a href="dashboard.php"><li class="menu-li active">Todos projetos</li></a>
+                        <a href="dashboard-adicionar.php">
+                            <li class="menu-li">Adicionar projeto
                                 <svg class="img-li" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                                 width="50" height="50"
                                 viewBox="0 0 172 172"
@@ -49,19 +58,35 @@ if(!isset($_SESSION['login'])) {
         </div>
 
         <div class="add-projeto-area">
+            <h1 class="h1-projeto">Todos projetos:</h1>
             <div class="formulario-area">
-                <form enctype="multipart/form-data" method="POST">
+                <form class="form" enctype="multipart/form-data" method="POST">
+                    <?php
+                    $get = $p -> getImagemProjeto();
+                    foreach($get as $projeto):
+                    ?>
                     <label class="label">
                         <h2 class="h2-form">Nome do cliente:</h2>
-                        <input type="text" class="input" name="empresa"/>
-                    </label> <br> <br>
-                    
-                    <label class="label">
-                        <h2 class="h2-form">Logo do cliente:</h2>
-                        <input multiple type="file" class="input" name="logo"/>
+                        <input value="<?=$projeto['nome_empresa'];?>" type="text" class="input" name="empresa"/>
                     </label> <br> <br>
 
-                    <input class="btn-add" type="submit" value="Adicionar projeto">
+                    <label class="label">
+                        <h2 class="h2-form">URL da empresa do cliente:</h2>
+                        <input value="<?=$projeto['url_empresa'];?>" type="text" class="input" name="url"/>
+                    </label> <br> <br>
+
+                    <label class="label">
+                        <h2 class="h2-form">Logo da empresa:</h2>
+
+                        <?php if(!empty($projeto['url'])) : ?>
+                            <img width="200" src="Assets/Images/Projetos/Upload/<?=$projeto['url'];?>">
+                        <?php endif; ?>
+
+                    </label><br> <br>
+
+
+                    <a class="btn-add" href="dashboard-editar.php?id=<?=$projeto['id'];?>">Editar anuncio</a>
+                <?php endforeach; ?>
                 </form>
             </div>
         </div>
